@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace CarBook.Persistence.Migrations
 {
-    [DbContext(typeof(CarBookContext))]
+    [DbContext(typeof(CarBookDbContext))]
     [Migration("20250820232631_mig_first")]
     partial class mig_first
     {

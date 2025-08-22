@@ -6,4 +6,18 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Remove="Features\CQRS\Q\**" />
+    <EmbeddedResource Remove="Features\CQRS\Q\**" />
+    <None Remove="Features\CQRS\Q\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Features\CQRS\Commands\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CarBook.Domain\CarBook.Domain.csproj" />
+  </ItemGroup>
+
 </Project>
